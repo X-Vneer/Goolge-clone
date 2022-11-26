@@ -2,9 +2,10 @@
 
 :root {
   --black-color: #202123;
+  --sec-black-color: #303134;
 }
 body {
-  font-family: "Open Sans", sans-ser;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: var(--black-color);
 }
 
@@ -51,3 +52,82 @@ nav ul li a {
 }
 
 /* end header styels */
+
+/* main styles */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 55px);
+}
+
+main h1 {
+  color: white;
+  font-size: 5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+main .search-bar {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  max-width: 585px;
+  gap: 5px;
+  border-radius: 25px;
+  border: 1px solid #959ba1;
+  padding: 0 18px;
+  margin: 25px 0;
+}
+
+main .search-bar img {
+  display: block;
+  height: 28px;
+  cursor: pointer;
+}
+
+main .search-bar input {
+  all: unset;
+  display: block;
+  color: white;
+  width: 100%;
+  flex-grow: 1;
+  padding: 10px 0;
+}
+
+main .btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+main .btns .btn {
+  all: unset;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 3px;
+  font-size: 10px;
+  background: var(--sec-black-color);
+  border: 1px solid var(--sec-black-color);
+}
+main .btns .btn:hover {
+  border: 1px solid #5f6368;
+}
+.btn a {
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+main p {
+  text-align: center;
+  margin: 25px 0;
+  color: white;
+  font-size: 10px;
+}
+
+main p a {
+  color: blue;
+}
