@@ -2,6 +2,7 @@
 
 :root {
   --black-color: #202123;
+  --dark-black: #181818;
   --sec-black-color: #303134;
 }
 body {
@@ -59,9 +60,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 55px);
+  height: calc(100vh - 130px);
 }
-
+main .content {
+  padding: 0 20px;
+}
 main h1 {
   color: white;
   font-size: 5rem;
@@ -72,7 +75,7 @@ main h1 {
 main .search-bar {
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: 80vw;
   max-width: 585px;
   gap: 5px;
   border-radius: 25px;
@@ -130,4 +133,31 @@ main p {
 
 main p a {
   color: blue;
+}
+/* end main styles */
+
+/* footer styels */
+footer {
+  background-color: var(--dark-black);
+  color: #999da2;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+footer div {
+  padding: 12px 30px;
+}
+footer div:first-child {
+  border-bottom: 1px solid #3c4043;
+}
+footer div:last-child {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer div:last-child ul {
+  display: flex;
+  gap: 10px;
+}
+footer div:last-child ul li {
+  cursor: pointer;
 }
